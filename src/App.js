@@ -3,7 +3,7 @@ import "./App.css";
 import Title from "./components/Title";
 import Items from "./components/Items";
 import ExpenseAdder from "./components/ExpenseAdder";
-import Total from "./components/Total";
+import TotalSpend from "./components/Total";
 
 class App extends React.Component {
   state = {
@@ -18,7 +18,7 @@ class App extends React.Component {
         <Title />
         <ExpenseAdder />
         <Items items={this.state.items} />
-        <Total />
+        <TotalSpend />
       </div>
     );
   }

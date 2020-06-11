@@ -1,12 +1,19 @@
 import React from "react";
 
-class Total extends React.Component {
+class TotalExpense extends React.Component {
   state = {
     total: "",
   };
   render() {
-    return <output></output>;
+    return (
+      <>
+        <label>
+          <h1>Your total spend today is £</h1>
+          <output></output>;
+        </label>
+      </>
+    );
   }
 }
 
-export default Total;
+export default TotalExpense;
