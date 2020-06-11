@@ -14,13 +14,13 @@ We've attached a checklist that applies to all React project development. There 
 [X] Draw component hierarchy
 [X] Label where you will require functions that change state
 [X] Label where you will require data
-[ ] Determine from this where you will require state & hold functions
+[X] Determine from this where you will require state & hold functions
 
 ## Setup
 
-[ ] Create your app directory (e.g. with create-react-app)
-[ ] Run your app
-[ ] Ensure you have React DevTools running (in browser)
+[X] Create your app directory (e.g. with create-react-app)
+[X] Run your app
+[X] Ensure you have React DevTools running (in browser)
 [ ] Make blank components (functional or class?) as per your plan
 [ ] Export and import components as per your hierarchy
 [ ] Check everything is hooked up

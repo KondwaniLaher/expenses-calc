@@ -1,22 +1,27 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 import Title from "./components/Title";
 import Items from "./components/Items";
-import Calculator from "./components/Calculator"
-
+import ExpenseAdder from "./components/ExpenseAdder";
+import Total from "./components/Total";
 
 class App extends React.Component {
-  
-}
-
-render (props) {
-  return ( 
-  <div className="App">
-    <Title/>
-    <Items/>
-    <Calculator/>
-  </div>)
- 
+  state = {
+    items: [
+      { name: "Venti Latte", price: 3.0 },
+      { name: "Parking", price: 2.5 },
+    ],
+  };
+  render() {
+    return (
+      <div className="App">
+        <Title />
+        <ExpenseAdder />
+        <Items items={this.state.items} />
+        <Total />
+      </div>
+    );
+  }
 }
 
 export default App;
