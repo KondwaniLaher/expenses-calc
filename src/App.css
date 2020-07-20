@@ -1,3 +1,18 @@
 .App {
   text-align: center;
+  background-color: blueviolet;
+}
+
+li {
+  list-style: none;
+  background-color: yellow;
+}
+
+input {
+  margin: 3rem 0.5rem;
+}
+
+.totalSpend {
+  background-color: tomato;
+  font-size: 2em;
 }

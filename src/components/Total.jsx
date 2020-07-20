@@ -1,17 +1,12 @@
 import React from "react";
 
 class TotalExpense extends React.Component {
-  state = {
-    total: "",
-  };
-  render() {
+  render(totalSum) {
+    // let { result } = this.props;
     return (
-      <>
-        <label>
-          <h1>Your total spend today is £</h1>
-          <output></output>;
-        </label>
-      </>
+      <h1 className="total">
+        <p>Your total spend today is £5.50 "result"</p>
+      </h1>
     );
   }
 }
