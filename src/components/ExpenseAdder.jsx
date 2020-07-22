@@ -59,8 +59,14 @@ class ExpenseAdder extends React.Component {
             value={this.state.price}
           />
         </label>
-        <label>{/* <p>{result}</p> */}</label>
-        <button onClick={this.calculate}>Add Item!</button>
+        <label>
+          <button onClick={this.calculate}>Add Item!</button>
+          <select name="category" id="cat"></select>
+          <label>
+            Quantity
+            <input type="num" />
+          </label>
+        </label>
       </form>
     );
   }

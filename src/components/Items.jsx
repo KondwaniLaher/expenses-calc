@@ -10,6 +10,8 @@ const Items = (props) => {
             <li key={stuff.name}>
               <h2>{stuff.name}</h2>
               <h2>{stuff.price}</h2>
+              <button>"+"</button>
+              <button>"-"</button>
             </li>
           );
         })}
