@@ -4,6 +4,8 @@ class ExpenseAdder extends React.Component {
   state = {
     name: "",
     price: null,
+    quantity: null,
+    category: "food",
     result: null,
   };
 
@@ -12,7 +14,7 @@ class ExpenseAdder extends React.Component {
     this.props.addExpense({ ...this.state });
     this.setState(
       (current) => {
-        return { name: "", price: null };
+        return { name: "", price: null, quantity: null };
       },
       () => {
         console.log(this.state);
@@ -60,13 +62,23 @@ class ExpenseAdder extends React.Component {
           />
         </label>
         <label>
-          <button onClick={this.calculate}>Add Item!</button>
-          <select name="category" id="cat"></select>
-          <label>
-            Quantity
-            <input type="num" />
-          </label>
+          Quantity:{" "}
+          <input
+            type="number"
+            onChange={this.handleInput}
+            id="quantity"
+            min="1"
+            value={this.state.quantity}
+          />
         </label>
+        <label>
+          <select name="category" id="category" onChange={this.handleInput}>
+            <option value={this.state.accommodation}>accommodation</option>
+            <option value={this.state.food}>food</option>
+          </select>
+        </label>
+        <br></br>
+        <button onClick={this.calculate}>Add Item!</button>
       </form>
     );
   }
