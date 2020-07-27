@@ -62,14 +62,6 @@ class ExpenseAdder extends React.Component {
           />
         </label>
         <label>
-<<<<<<< HEAD
-          <button onClick={this.calculate}>Add Item!</button>
-          <select name="category" id="cat"></select>
-          <label>
-            Quantity:{" "}
-            <input type="" />
-          </label>
-=======
           Quantity:{" "}
           <input
             type="number"
@@ -84,7 +76,6 @@ class ExpenseAdder extends React.Component {
             <option value={this.state.accommodation}>accommodation</option>
             <option value={this.state.food}>food</option>
           </select>
->>>>>>> 1d2119a184084ba97a560208b3bc7788c2246264
         </label>
         <br></br>
         <button onClick={this.calculate}>Add Item!</button>
